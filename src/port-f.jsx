@@ -23,13 +23,41 @@ class Portfolio extends React.Component {
         </div>
         <header>
           <div className="navigation">
-            <div onClick={this.scroll1} className="s1  " />
+            <div
+              onClick={() => {
+                this.scrollyy(1);
+              }}
+              className="s1  "
+            >
+              Home
+            </div>
 
-            <div onClick={this.scroll2} className="s2" />
+            <div
+              onClick={() => {
+                this.scrollyy(2);
+              }}
+              className="s2"
+            >
+              Skills
+            </div>
 
-            <div onClick={this.scroll3} className="s3" />
+            <div
+              onClick={() => {
+                this.scrollyy(3);
+              }}
+              className="s3"
+            >
+              Projects
+            </div>
 
-            <div onClick={this.scroll4} className="s4" />
+            <div
+              onClick={() => {
+                this.scrollyy(4);
+              }}
+              className="s4"
+            >
+              Resume
+            </div>
           </div>
 
           <div
@@ -215,34 +243,45 @@ class Portfolio extends React.Component {
     );
   }
 
-  scroll1 = () => {
-    window.scrollTo(0, 0);
-    document.querySelector(".s1").style.backgroundColor = "#8a8a8ae5";
-    document.querySelector(".s2").style.backgroundColor = "#263341af";
-    document.querySelector(".s3").style.backgroundColor = "#263341af";
-    document.querySelector(".s4").style.backgroundColor = "#263341af";
+  scrollyy = divnum => {
+    if (divnum === 1) {
+      window.scrollTo(0, 0);
+    }
+    if (divnum === 2) {
+      window.scrollTo(0, 800);
+    }
+    if (divnum === 3) {
+      window.scrollTo(0, 1600);
+    }
+    if (divnum === 4) {
+      window.scrollTo(0, 1800);
+    }
   };
-  scroll2 = () => {
-    window.scrollTo(0, 800);
-    document.querySelector(".s2").style.backgroundColor = "#8a8a8ae5";
-    document.querySelector(".s1").style.backgroundColor = "#263341af";
-    document.querySelector(".s3").style.backgroundColor = "#263341af";
-    document.querySelector(".s4").style.backgroundColor = "#263341af";
-  };
-  scroll3 = () => {
-    window.scrollTo(0, 1600);
-    document.querySelector(".s3").style.backgroundColor = "#8a8a8ae5";
-    document.querySelector(".s2").style.backgroundColor = "#263341af";
-    document.querySelector(".s4").style.backgroundColor = "#263341af";
-    document.querySelector(".s1").style.backgroundColor = "#263341af";
-  };
-  scroll4 = () => {
-    window.scrollTo(0, 1800);
-    document.querySelector(".s4").style.backgroundColor = "#8a8a8ae5";
-    document.querySelector(".s2").style.backgroundColor = "#263341af";
-    document.querySelector(".s3").style.backgroundColor = "#263341af";
-    document.querySelector(".s1").style.backgroundColor = "#263341af";
-  };
+
+  scroller = window.addEventListener("scroll", () => {
+    let ypos = window.scrollY;
+    if (ypos <= 400) {
+      document.querySelector(".s1").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s2").style.backgroundColor = "#263341af";
+      document.querySelector(".s3").style.backgroundColor = "#263341af";
+      document.querySelector(".s4").style.backgroundColor = "#263341af";
+    } else if (ypos <= 800 && ypos >= 400) {
+      document.querySelector(".s2").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s1").style.backgroundColor = "#263341af";
+      document.querySelector(".s3").style.backgroundColor = "#263341af";
+      document.querySelector(".s4").style.backgroundColor = "#263341af";
+    } else if (ypos <= 1600 && ypos >= 800) {
+      document.querySelector(".s3").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s2").style.backgroundColor = "#263341af";
+      document.querySelector(".s1").style.backgroundColor = "#263341af";
+      document.querySelector(".s4").style.backgroundColor = "#263341af";
+    } else if (ypos <= 2400 && ypos >= 1600) {
+      document.querySelector(".s3").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s2").style.backgroundColor = "#263341af";
+      document.querySelector(".s1").style.backgroundColor = "#263341af";
+      document.querySelector(".s4").style.backgroundColor = "#263341af";
+    }
+  });
 
   esc = () => {
     let i = 1;
