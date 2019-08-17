@@ -208,7 +208,7 @@ class Portfolio extends React.Component {
           <div className="foot-er d-flex align-items-end justify-content-center">
             <div className="d-flex flex-column justify-content-center">
               <p className="mb-3">
-                Dveloped and Desinged by Amirrrhossein lavasani &copy; 2019
+                Dveloped and Desinged by Amirhossein lavasani &copy; 2019
               </p>
 
               <a
