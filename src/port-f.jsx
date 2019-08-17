@@ -23,23 +23,15 @@ class Portfolio extends React.Component {
         </div>
         <header>
           <div className="navigation">
-            <div onClick={this.scroll1} className="s1  ">
-              <a href="#scroll1">Home</a>
-            </div>
+            <div onClick={this.scroll1} className="s1  " />
 
-            <div onClick={this.scroll2} className="s2">
-              <a href="#scroll2"> Skills</a>
-            </div>
+            <div onClick={this.scroll2} className="s2" />
 
-            <div onClick={this.scroll3} className="s3">
-              <a href="#scroll3">Projects</a>
-            </div>
+            <div onClick={this.scroll3} className="s3" />
 
-            <div onClick={this.scroll4} className="s4">
-              <a href="#scroll4">Resume</a>
-            </div>
+            <div onClick={this.scroll4} className="s4" />
           </div>
-          <a name="scroll1" />
+
           <div
             className="header-left  d-flex justify-content-center align-items-center"
             id="head-bg"
@@ -107,7 +99,6 @@ class Portfolio extends React.Component {
         </header>
 
         <section>
-          <a name="scroll2" />
           <div className="sec1-bg d-flex align-items-center justify-content-center ">
             <div className="row d-flex justify-content-center">
               <div className="col-md-4 col-sm-6 ct">
@@ -153,7 +144,6 @@ class Portfolio extends React.Component {
         </section>
 
         <section>
-          <a name="scroll3" />
           <div className="sec2-bg d-flex flex-column align-items-center justify-content-center">
             <div
               id="head-h2"
@@ -226,24 +216,28 @@ class Portfolio extends React.Component {
   }
 
   scroll1 = () => {
+    window.scrollTo(0, 0);
     document.querySelector(".s1").style.backgroundColor = "#8a8a8ae5";
     document.querySelector(".s2").style.backgroundColor = "#263341af";
     document.querySelector(".s3").style.backgroundColor = "#263341af";
     document.querySelector(".s4").style.backgroundColor = "#263341af";
   };
   scroll2 = () => {
+    window.scrollTo(0, 800);
     document.querySelector(".s2").style.backgroundColor = "#8a8a8ae5";
     document.querySelector(".s1").style.backgroundColor = "#263341af";
     document.querySelector(".s3").style.backgroundColor = "#263341af";
     document.querySelector(".s4").style.backgroundColor = "#263341af";
   };
   scroll3 = () => {
+    window.scrollTo(0, 1600);
     document.querySelector(".s3").style.backgroundColor = "#8a8a8ae5";
     document.querySelector(".s2").style.backgroundColor = "#263341af";
     document.querySelector(".s4").style.backgroundColor = "#263341af";
     document.querySelector(".s1").style.backgroundColor = "#263341af";
   };
   scroll4 = () => {
+    window.scrollTo(0, 1800);
     document.querySelector(".s4").style.backgroundColor = "#8a8a8ae5";
     document.querySelector(".s2").style.backgroundColor = "#263341af";
     document.querySelector(".s3").style.backgroundColor = "#263341af";
