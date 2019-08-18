@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
@@ -207,6 +208,7 @@ $theme-preload: rgb(35, 225, 250);
   -webkit-box-shadow: -4px 9px 37px -1px rgba(59, 58, 58, 0.4);
   -moz-box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
   box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
+
   &:hover {
     background-image: url("imgs/Frame1.svg");
     position: relative;
@@ -328,6 +330,7 @@ $theme-preload: rgb(35, 225, 250);
   -webkit-box-shadow: -4px 9px 37px -1px rgba(59, 58, 58, 0.4);
   -moz-box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
   box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
+  cursor: pointer;
   &:hover {
     div {
       height: 100px;
@@ -348,6 +351,17 @@ $theme-preload: rgb(35, 225, 250);
 }
 .screen-shot2 {
   background: url("imgs/p2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 150px;
+  width: 100%;
+  transition-duration: 0.3s;
+  object-fit: contain;
+}
+.screen-shot3 {
+  background: url("imgs/p3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px;

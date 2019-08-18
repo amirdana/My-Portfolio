@@ -68,23 +68,19 @@ class Portfolio extends React.Component {
               <div className="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div id="headtxt" className="fit-txt ">
                   <div id="head-h2" className="glitch" data-text="About me">
-                    {"{ About me }"}
+                    {"{ About me"}
                   </div>
-                  <p className="preload-upg">
+                  <p className="preload-upg pl-2">
                     {" "}
                     About three years ago after forcing myself to love what i do
                     , i started to do what i truly passionate about, that's when
-                    my journey to being a programmer started, "story short", now
-                    im a Front-End Developer and im loving it since day one.
+                    my journey for being a programmer started, "story short",
+                    now im a Front-End Developer and im loving it since day one.
                     <br />
                     <br />
                     <strong id="head-ps"> </strong>
                   </p>
-                  <a
-                    className="text-light"
-                    target="_blank"
-                    href="https://github.com/amirdana"
-                  >
+                  <a className="text-light" href="https://github.com/amirdana">
                     <i className="fa fa-github git-info mb-3"> github</i>
                   </a>
                 </div>
@@ -175,7 +171,13 @@ class Portfolio extends React.Component {
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
-                  <div className=" sec2-pjb flex-fill" />
+                  <div className=" sec2-pjb  flex-fill text-center">
+                    <div className="screen-shot3" />
+                    <h4 className="mt-3">Instagram UI</h4>
+                    <p className="mt-1">Bootstrap</p>
+                    <p className="mt-1">Sass</p>
+                    <p className="mt-1" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,7 +202,6 @@ class Portfolio extends React.Component {
             <div className="d-flex flex-column justify-content-center">
               <a
                 className="text-light text-center "
-                target="_blank"
                 href="https://github.com/amirdana"
               >
                 <i className="fa fa-github fa-2x " />
