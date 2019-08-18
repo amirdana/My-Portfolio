@@ -15,7 +15,7 @@ class Portfolio extends React.Component {
           <p className="preload-upg">
             Develope and Desinged By Amirhossein Lavasani &copy; 2019{" "}
           </p>
-          <div className="compatible d-flex flex-column ">
+          <div className="compatible d-flex flex-column">
             <i className="fa fa-firefox fa-lg" />
             <i className="fa fa-chrome fa-lg" />
             <i className="fa fa-edge fa-lg" />
@@ -67,8 +67,8 @@ class Portfolio extends React.Component {
             <div className="row mx-2">
               <div className="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div id="headtxt" className="fit-txt ">
-                  <div id="head-h2" className="glitch" data-text="My Story">
-                    {"{ My Story }"}
+                  <div id="head-h2" className="glitch" data-text="About me">
+                    {"{ About me }"}
                   </div>
                   <p className="preload-upg">
                     {" "}
@@ -81,11 +81,11 @@ class Portfolio extends React.Component {
                     <strong id="head-ps"> </strong>
                   </p>
                   <a
-                    className="text-dark"
+                    className="text-light"
                     target="_blank"
                     href="https://github.com/amirdana"
                   >
-                    <i className="fa fa-github fa-2x" />
+                    <i className="fa fa-github git-info mb-3"> github</i>
                   </a>
                 </div>
               </div>
@@ -93,34 +93,7 @@ class Portfolio extends React.Component {
                 id="headmid"
                 className="col-md-6 col-sm-12 d-flex justify-content-center"
               >
-                <form className="head-form text-white mr-5">
-                  <h2 className="text-center mb-4 text-light">Contact Me</h2>
-                  <div className="form-group">
-                    <label htmlFor="formGroupExampleInput">Example label</label>
-                    <input
-                      type=""
-                      className="form-control"
-                      id="formGroupExampleInput"
-                      placeholder="Example input"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="formGroupExampleInput2">
-                      Another label
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="formGroupExampleInput2"
-                      placeholder="Another input"
-                    />
-                  </div>
-                  <div>
-                    <button type="submit" className="btn btn-primary ">
-                      Submit
-                    </button>
-                  </div>
-                </form>
+                <div className="head-image" />
               </div>
             </div>
           </div>
@@ -133,7 +106,8 @@ class Portfolio extends React.Component {
                 <div id="r1" className="rez-1 m-3 text-center ">
                   <i className="fa fa-android andr" />
                   <div className="ct2 ">
-                    <p className="pt-5">Dominate on B4A</p>
+                    <p className="pt-5">Familar with</p>
+                    <p>B4 Android</p>
                     <p className="rellax">Hybrid OOP</p>
                     <p className="">Hardware engaged programing</p>
                     <p className="">Couple of published app</p>
@@ -222,19 +196,18 @@ class Portfolio extends React.Component {
         </section>
 
         <footer>
-          <div className="foot-er d-flex align-items-end justify-content-center">
+          <div className="foot-er d-flex align-items-center justify-content-center">
             <div className="d-flex flex-column justify-content-center">
-              <p className="mb-3">
-                Dveloped and Desinged by Amirhossein lavasani &copy; 2019
-              </p>
-
               <a
-                className="text-light text-center mb-3"
+                className="text-light text-center "
                 target="_blank"
                 href="https://github.com/amirdana"
               >
-                <i className="fa fa-github fa-2x" />
+                <i className="fa fa-github fa-2x " />
               </a>
+              <p className="mt-2 mb-0">
+                Dveloped and Desinged by Amirhossein lavasani &copy; 2019
+              </p>
             </div>
           </div>
         </footer>
@@ -300,7 +273,7 @@ class Portfolio extends React.Component {
   };
 
   e = 0;
-  txte = "By the way feel free to check out my portfolio.";
+  txte = "By the way feel free to check out my PROJECTS.";
   speed = 50;
   typeWriter = () => {
     if (this.e < this.txte.length) {

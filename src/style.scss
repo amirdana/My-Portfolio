@@ -10,7 +10,7 @@ html {
 body {
   overflow-x: hidden;
 }
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Ruda|Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Satisfy&display=swap");
@@ -50,7 +50,7 @@ $theme-preload: rgb(35, 225, 250);
   height: 2px;
   width: 250px;
   margin-top: -20px;
-  margin-bottom: 50px;
+  margin-bottom: auto;
   background: $theme-cl;
 }
 
@@ -112,8 +112,8 @@ $theme-preload: rgb(35, 225, 250);
 
   div {
     margin-top: 5px;
-    width: 3px;
-    height: 40px;
+    width: 5px;
+    height: 50px;
     background: #263341af;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -144,21 +144,27 @@ $theme-preload: rgb(35, 225, 250);
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
   background-size: cover;
+  background-position: left;
 }
 
 .fit-txt {
   margin-right: 50px;
   width: 500px;
   h2 {
-    color: #eeebeb;
+    color: #eeebec;
     margin-bottom: 30px;
   }
   p {
-    color: #000000c7;
-    font-family: "Gill Sans", sans-serif;
+    color: #0a0a0a;
+    font-family: "Montserrat", sans-serif;
+  }
+  #head-ps {
+    color: #333333;
   }
 }
-
+.git-info {
+  font-size: 25px;
+}
 .header-right {
   background: #f2f2f2;
   z-index: -2;
@@ -176,12 +182,19 @@ $theme-preload: rgb(35, 225, 250);
   }
 }
 
+.head-image {
+  background: url("imgs/headimg-min.png") no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 400px;
+  transition-duration: 0.5;
+  transition-property: all;
+}
 // section1
 
 .sec1-bg {
   min-height: 700px;
-  background: url("./imgs/Group.svg") no-repeat;
-  background-size: cover;
+  background: #ffffff;
 }
 
 .rez-1 {
@@ -204,9 +217,9 @@ $theme-preload: rgb(35, 225, 250);
     animation-timing-function: ease;
     animation-direction: alternate;
     background-size: cover;
-    -webkit-box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.712);
-    -moz-box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.6);
-    box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.6);
+    -webkit-box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.884);
+    -moz-box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.884);
+    box-shadow: -4px 9px 37px -1px rgba(171, 193, 72, 0.884);
   }
 }
 
@@ -293,7 +306,10 @@ $theme-preload: rgb(35, 225, 250);
 .sec2-bg {
   background: url("imgs/sec2bg.svg") no-repeat;
   background-size: cover;
-  min-height: 1100px;
+  background-position: right;
+
+  min-height: 1200px;
+  padding-bottom: 200px;
 }
 
 .sec2-pj {
@@ -344,9 +360,10 @@ $theme-preload: rgb(35, 225, 250);
 
 //'
 .foot-er {
-  height: 300px;
+  height: 100px;
   font-size: 12px;
-  background: url("imgs/foot-er.svg") no-repeat;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(63, 63, 63);
   background-size: cover;
   color: white;
   font-family: sans-serif;
@@ -567,7 +584,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 .glitch {
-  color: #000000c7;
+  color: #f8f8f8;
   font-size: 50px;
   margin-bottom: 30px;
   font-weight: 500;
@@ -991,7 +1008,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 @media only screen and (max-width: 576px) {
-  .head-form {
+  .head-image {
     display: none;
   }
   .fit-txt {
