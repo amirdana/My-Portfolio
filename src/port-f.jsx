@@ -163,7 +163,6 @@ class Portfolio extends React.Component {
                     <p className="">phyton</p>
                     <p className="">Visual studio</p>
                     <p className="">OOP</p>
-                    <p className="" />
                   </div>
                 </div>
               </div>
