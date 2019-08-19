@@ -64,7 +64,7 @@ class Portfolio extends React.Component {
             className="header-left  d-flex justify-content-center align-items-center"
             id="head-bg"
           >
-            <div className="row mx-2">
+            <div className="row main-row mx-2">
               <div className="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div id="headtxt" className="fit-txt ">
                   <div id="head-h2" className="glitch" data-text="About me">
@@ -80,8 +80,8 @@ class Portfolio extends React.Component {
                     <br />
                     <strong id="head-ps"> </strong>
                   </p>
-                  <a className="text-light" href="https://github.com/amirdana">
-                    <i className="fa fa-github git-info mb-3"> github</i>
+                  <a className="text-light " href="https://github.com/amirdana">
+                    <i className="fa fa-github git-info mb-3 "> github</i>
                   </a>
                 </div>
               </div>
@@ -96,10 +96,10 @@ class Portfolio extends React.Component {
         </header>
 
         <section>
-          <div className="sec1-bg d-flex align-items-center justify-content-center ">
-            <div className="row d-flex justify-content-center">
-              <div className="col-md-4 col-sm-6 ct">
-                <div id="r1" className="rez-1 m-3 text-center ">
+          <div className="sec1-bg  ">
+            <div className="row secrow">
+              <div className=" col-md-4 col-sm-6   p-0  d-flex justify-content-center align-items-center">
+                <div id="r1" className="rez-1  text-center ">
                   <i className="fa fa-android andr" />
                   <div className="ct2 ">
                     <p className="pt-5">Familar with</p>
@@ -110,8 +110,8 @@ class Portfolio extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6 ct">
-                <div id="r1" className="rez-2 m-3 text-center ">
+              <div className="col-md-4 col-sm-6 p-0 pl-1 d-flex justify-content-center align-items-center">
+                <div id="r1" className="rez-2 m-2 text-center ">
                   <i className="fa fa-globe web" />
                   <div className="ct2 ">
                     <p className="pt-5">HTML5 CSS3 JS-Es6+ </p>
@@ -124,8 +124,8 @@ class Portfolio extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-6 ct">
-                <div id="r3" className="rez-3 m-3 text-center">
+              <div className=" col-md-4 col-sm-6 p-0 d-flex justify-content-center align-items-center">
+                <div id="r3" className="rez-3 m-2 text-center">
                   <i className="fa fa-windows win" />
                   <div className="ct2 ">
                     <p className="pt-5">Familar with </p>
@@ -150,9 +150,9 @@ class Portfolio extends React.Component {
               perojects
             </div>
             <span className="span-line" />
-            <div className="ct5 d-flex align-items-center justify-content-center">
+            <div className="ct5 ">
               <div className="row  d-flex justify-content-center">
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div className="col-md-4 col-sm-6  sec2-pj">
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot1" />
                     <h4 className="mt-3">Weather Status</h4>
@@ -165,23 +165,28 @@ class Portfolio extends React.Component {
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot2" />
                     <h4 className="mt-3">Instagram UI</h4>
+                    <p className="mt-1">HTML5 CSS3</p>
                     <p className="mt-1">Bootstrap</p>
                     <p className="mt-1">Sass</p>
-                    <p className="mt-1" />
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot3" />
-                    <h4 className="mt-3">Instagram UI</h4>
+
+                    <h4 className="mt-3">Digikala Front</h4>
                     <p className="mt-1">Bootstrap</p>
                     <p className="mt-1">Sass</p>
-                    <p className="mt-1" />
+                    <p className="mt-1 text-dark">
+                      *Not fully responsive
+                      <br />
+                      As the orginal site*
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="ct5 d-flex align-items-center justify-content-center">
+            <div className="ct5 ">
               <div className="row d-flex justify-content-center">
                 <div className="col-md-4 col-sm-6 sec2-pj">
                   <div className=" sec2-pjb flex-fill" />
@@ -206,8 +211,9 @@ class Portfolio extends React.Component {
               >
                 <i className="fa fa-github fa-2x " />
               </a>
+              <p className="mt-1 mb-0 pwerd">Powered By React JS</p>
               <p className="mt-2 mb-0">
-                Dveloped and Desinged by Amirhossein lavasani &copy; 2019
+                Developed and Desinged by Amirhossein lavasani &copy; 2019
               </p>
             </div>
           </div>

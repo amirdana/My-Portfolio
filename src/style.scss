@@ -125,7 +125,7 @@ $theme-preload: rgb(35, 225, 250);
     cursor: pointer;
 
     &:hover {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 600;
       border-right: 2px white solid;
       width: 100px;
@@ -145,7 +145,11 @@ $theme-preload: rgb(35, 225, 250);
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
   background-size: cover;
-  background-position: left;
+
+  background-position-y: -100px;
+  .main-row {
+    margin-top: -150px;
+  }
 }
 
 .fit-txt {
@@ -171,18 +175,6 @@ $theme-preload: rgb(35, 225, 250);
   z-index: -2;
 }
 
-.head-form {
-  margin-left: 80px;
-  background: #000000c7;
-  border-radius: 25px;
-  padding: 30px;
-  width: 400px;
-  button {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
 .head-image {
   background: url("imgs/headimg-min.png") no-repeat;
   background-size: contain;
@@ -196,10 +188,13 @@ $theme-preload: rgb(35, 225, 250);
 .sec1-bg {
   min-height: 700px;
   background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rez-1 {
-  width: 300px;
+  width: 90%;
   min-height: 470px;
   border-radius: 20px;
   background: white;
@@ -226,7 +221,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 .rez-2 {
-  width: 300px;
+  width: 90%;
   min-height: 470px;
   border-radius: 20px;
   background: white;
@@ -248,7 +243,7 @@ $theme-preload: rgb(35, 225, 250);
   }
 }
 .rez-3 {
-  width: 300px;
+  width: 90%;
   min-height: 470px;
   border-radius: 20px;
   background: white;
@@ -295,10 +290,20 @@ $theme-preload: rgb(35, 225, 250);
 .ct {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 //
 
+.secrow {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.seczzz {
+  width: 100px;
+}
 .ct5 {
   width: 80%;
   display: flex;
@@ -311,6 +316,7 @@ $theme-preload: rgb(35, 225, 250);
   background-position: right;
 
   min-height: 1200px;
+
   padding-bottom: 200px;
 }
 
@@ -326,6 +332,7 @@ $theme-preload: rgb(35, 225, 250);
   border-radius: 15px;
   width: 320px;
   min-height: 350px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: -4px 9px 37px -1px rgba(59, 58, 58, 0.4);
   -moz-box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
@@ -377,11 +384,15 @@ $theme-preload: rgb(35, 225, 250);
   height: 100px;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
-  background: rgb(63, 63, 63);
+  background: rgb(53, 53, 53);
   background-size: cover;
   color: white;
   font-family: sans-serif;
   font-weight: lighter;
+  .pwerd {
+    font-size: 10px;
+    text-align: center;
+  }
 }
 
 //keyframes & classes
