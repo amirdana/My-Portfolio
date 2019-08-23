@@ -60,11 +60,32 @@ class Portfolio extends React.Component {
             </div>
           </div>
 
+          <div className="c-navbar ">
+            <div className="c-container">
+              <div className="c-brand">Amir Dana</div>
+
+              <ul className="c-nav-ul">
+                <li>
+                  <a href="">Home</a>{" "}
+                </li>
+                <li>
+                  <a href="">Github</a>{" "}
+                </li>
+                <li>
+                  <a href="">Contact</a>{" "}
+                </li>
+                <li>
+                  <a href="">Resume</a>{" "}
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div
             className="header-left  d-flex justify-content-center align-items-center"
             id="head-bg"
           >
-            <div className="row main-row mx-2">
+            <div className="row main-row  mx-2">
               <div className="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div id="headtxt" className="fit-txt ">
                   <div id="head-h2" className="glitch" data-text="About me">
@@ -189,7 +210,14 @@ class Portfolio extends React.Component {
             <div className="ct5 ">
               <div className="row d-flex justify-content-center">
                 <div className="col-md-4 col-sm-6 sec2-pj">
-                  <div className=" sec2-pjb flex-fill" />
+                  <div className=" sec2-pjb  flex-fill text-center">
+                    <div className="screen-shot4" />
+
+                    <h4 className="mt-3">Form Validation</h4>
+                    <p className="mt-1">Javascript</p>
+                    <p className="mt-1">Sass</p>
+                    <p className="mt-1">Regex Reference</p>
+                  </div>
                 </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
                   <div className=" sec2-pjb flex-fill" />
@@ -260,6 +288,12 @@ class Portfolio extends React.Component {
       document.querySelector(".s1").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
     }
+    if (ypos >= 200) {
+      document.querySelector(".c-navbar").style.height = "50px";
+    } else document.querySelector(".c-navbar").style.height = "70px";
+    if (ypos >= 1300) {
+      document.querySelector(".c-navbar").style.top = "-80px";
+    } else document.querySelector(".c-navbar").style.top = "0px";
   });
 
   esc = () => {
@@ -276,6 +310,7 @@ class Portfolio extends React.Component {
     document.getElementById("headmid").classList.add("slide-in-right");
     document.getElementById("headtxt").classList.add("slide-in-left");
     document.querySelector(".navigation").classList.add("slide-bottom");
+
     this.typeWriter();
   };
 

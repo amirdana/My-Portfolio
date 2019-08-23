@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Ruda|Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap");
 body,
 html {
   width: 100%;
@@ -110,6 +111,73 @@ body {
   widows: 90%;
 }
 
+.c-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #284653a8;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 80px;
+}
+
+.c-navbar .c-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.c-navbar .c-nav-ul li {
+  text-decoration: none;
+  display: inline;
+  color: white;
+  margin-right: 10px;
+}
+
+.c-navbar .c-nav-ul {
+  font-family: "Montserrat", sans-serif;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.c-navbar .c-nav-ul a {
+  color: white;
+  text-decoration: none;
+}
+
 .navigation {
   position: fixed;
   left: 2%;
@@ -155,7 +223,7 @@ body {
 }
 
 .header-left {
-  width: 100%;
+  width: 105%;
   min-height: 800px;
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
@@ -164,7 +232,7 @@ body {
 }
 
 .header-left .main-row {
-  margin-top: -150px;
+  margin-top: -50px;
 }
 
 .fit-txt {
@@ -430,6 +498,20 @@ body {
 
 .screen-shot3 {
   background: url("imgs/p3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 150px;
+  width: 100%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.screen-shot4 {
+  background: url("imgs/form-validation.png") no-repeat;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px;
@@ -1086,9 +1168,6 @@ body {
     text-align: center;
     margin-right: 0;
   }
-  .head-form {
-    margin-left: 20px;
-  }
   .preload-upg {
     margin-right: 20px;
   }
@@ -1106,6 +1185,9 @@ body {
 @media only screen and (max-width: 768px) {
   .fit-txt {
     text-align: center;
+  }
+  .header-left {
+    padding-top: 250px;
   }
   .rez-2 {
     -webkit-transform: translatey(0);
@@ -1126,6 +1208,9 @@ body {
   .head-image {
     display: none;
   }
+  .header-left {
+    padding-top: 0;
+  }
   .fit-txt {
     width: 90%;
   }
@@ -1136,6 +1221,18 @@ body {
   }
   .sec2-pjb {
     width: 105px;
+  }
+  .c-brand {
+    display: none;
+  }
+  .c-navbar,
+  .c-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1149,8 +1246,21 @@ body {
 
 @media only screen and (max-width: 350px) {
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
     width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .c-container {
+    width: 1500px;
+  }
+  .c-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */

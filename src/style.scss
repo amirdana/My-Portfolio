@@ -15,6 +15,7 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Ruda|Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Handlee|Open+Sans+Condensed:300|Rajdhani|Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap");
 
 /******** navigation assist *********
                                     
@@ -103,6 +104,50 @@ $theme-preload: rgb(35, 225, 250);
 .ct4 {
   widows: 90%;
 }
+.c-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #284653a8;
+  transition-duration: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  .c-brand {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Nothing You Could Do", cursive;
+  }
+  .c-nav-ul li {
+    text-decoration: none;
+    display: inline;
+    color: white;
+    margin-right: 10px;
+  }
+  .c-nav-ul {
+    font-family: "Montserrat", sans-serif;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
 
 .navigation {
   position: fixed;
@@ -140,7 +185,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 .header-left {
-  width: 100%;
+  width: 105%;
   min-height: 800px;
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
@@ -148,7 +193,7 @@ $theme-preload: rgb(35, 225, 250);
 
   background-position-y: -100px;
   .main-row {
-    margin-top: -150px;
+    margin-top: -50px;
   }
 }
 
@@ -369,6 +414,17 @@ $theme-preload: rgb(35, 225, 250);
 }
 .screen-shot3 {
   background: url("imgs/p3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 150px;
+  width: 100%;
+  transition-duration: 0.3s;
+  object-fit: contain;
+}
+.screen-shot4 {
+  background: url("imgs/form-validation.png") no-repeat;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px;
@@ -999,9 +1055,7 @@ $theme-preload: rgb(35, 225, 250);
     text-align: center;
     margin-right: 0;
   }
-  .head-form {
-    margin-left: 20px;
-  }
+
   .preload-upg {
     margin-right: 20px;
   }
@@ -1020,7 +1074,9 @@ $theme-preload: rgb(35, 225, 250);
   .fit-txt {
     text-align: center;
   }
-
+  .header-left {
+    padding-top: 250px;
+  }
   .rez-2 {
     transform: translatey(0);
     &:hover {
@@ -1036,6 +1092,9 @@ $theme-preload: rgb(35, 225, 250);
   .head-image {
     display: none;
   }
+  .header-left {
+    padding-top: 0;
+  }
   .fit-txt {
     width: 90%;
   }
@@ -1046,6 +1105,14 @@ $theme-preload: rgb(35, 225, 250);
   }
   .sec2-pjb {
     width: 105px;
+  }
+  .c-brand {
+    display: none;
+  }
+  .c-navbar,
+  .c-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1059,7 +1126,17 @@ $theme-preload: rgb(35, 225, 250);
 
 @media only screen and (max-width: 350px) {
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
     width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .c-container {
+    width: 1500px;
+  }
+  .c-navbar {
+    display: flex;
+    justify-content: space-around;
   }
 }
