@@ -4,7 +4,9 @@ import "./style.css";
 class Portfolio extends React.Component {
   render() {
     return (
+      {/*
       <div>
+        
         <div id="preload-dlt">
           <button id="preload-btn" onClick={this.esc} className="Pbtn">
             Take a Look
@@ -21,6 +23,7 @@ class Portfolio extends React.Component {
             <i className="fa fa-edge fa-lg" />
           </div>
         </div>
+      */}
         <header>
           <div className="navigation">
             <div
