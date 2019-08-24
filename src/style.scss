@@ -92,6 +92,12 @@ $theme-preload: rgb(35, 225, 250);
       color: $theme-preload;
     }
   }
+  span {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    width: 0;
+    margin-top: 10px;
+  }
   font-family: "Segoe UI", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   position: absolute;
@@ -111,14 +117,15 @@ $theme-preload: rgb(35, 225, 250);
   align-items: center;
 }
 .ld-btn {
-  width: 180px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
   background: none;
   color: white;
   border-radius: 10px;
   font-size: 20px;
   transition-duration: 0.3s;
   border: 1px white solid;
+
   &:hover {
     background: white;
     color: #263341;
@@ -147,7 +154,7 @@ $theme-preload: rgb(35, 225, 250);
     text-decoration: none;
     display: inline;
     color: white;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .c-nav-ul {
     font-family: "Montserrat", sans-serif;
@@ -246,7 +253,8 @@ $theme-preload: rgb(35, 225, 250);
 
 .sec1-bg {
   min-height: 700px;
-  background: #ffffff;
+  background: url("imgs/Group.svg") no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

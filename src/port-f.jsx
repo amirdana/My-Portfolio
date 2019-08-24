@@ -16,9 +16,8 @@ class Portfolio extends React.Component {
             Develope and Desinged By Amirhossein Lavasani &copy; 2019{" "}
           </p>
           <div className="compatible d-flex flex-column">
-            <i className="fa fa-firefox fa-lg" />
-            <i className="fa fa-chrome fa-lg" />
-            <i className="fa fa-edge fa-lg" />
+            <i className="text-center fa fa-chrome fa-2x" />
+            <span>Chrome Optimized</span>
           </div>
         </div>
         <header>
@@ -291,7 +290,7 @@ class Portfolio extends React.Component {
     if (ypos >= 200) {
       document.querySelector(".c-navbar").style.height = "50px";
     } else document.querySelector(".c-navbar").style.height = "70px";
-    if (ypos >= 1300) {
+    if (ypos >= 1500) {
       document.querySelector(".c-navbar").style.top = "-80px";
     } else document.querySelector(".c-navbar").style.top = "0px";
   });
