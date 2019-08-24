@@ -4,9 +4,7 @@ import "./style.css";
 class Portfolio extends React.Component {
   render() {
     return (
-      {/*
       <div>
-        
         <div id="preload-dlt">
           <button id="preload-btn" onClick={this.esc} className="Pbtn">
             Take a Look
@@ -23,7 +21,6 @@ class Portfolio extends React.Component {
             <i className="fa fa-edge fa-lg" />
           </div>
         </div>
-      */}
         <header>
           <div className="navigation">
             <div
@@ -69,16 +66,16 @@ class Portfolio extends React.Component {
 
               <ul className="c-nav-ul">
                 <li>
-                  <a href="">Home</a>{" "}
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="">Github</a>{" "}
+                  <a href="#">Github</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>{" "}
+                  <a href="#">Contact</a>
                 </li>
                 <li>
-                  <a href="">Resume</a>{" "}
+                  <a href="#">Resume</a>
                 </li>
               </ul>
             </div>
@@ -331,9 +328,8 @@ class Portfolio extends React.Component {
   forceLoad = setTimeout(() => {
     document.getElementById("preload-btn").disabled = false;
     let apy = document.getElementById("preload-btn").classList;
-    apy.add("btn");
-    apy.add("btn-lg");
-    apy.add("btn-outline-light");
+    apy.add("ld-btn");
+
     document.getElementById("loaded").classList.remove("tracking-in-expand");
     document.getElementById("loaded").classList.add("preload-txt");
     document.getElementById("loaded").innerHTML = "Ready!";
@@ -341,9 +337,9 @@ class Portfolio extends React.Component {
 
   preloadKill = window.addEventListener("load", () => {
     let apy = document.getElementById("preload-btn").classList;
-    apy.add("btn");
-    apy.add("btn-lg");
-    apy.add("btn-outline-light");
+    apy.add("ld-btn");
+    document.getElementById("preload-btn").style.display = "block";
+
     document.getElementById("loaded").classList.remove("tracking-in-expand");
     document.getElementById("loaded").classList.add("preload-txt");
     document.getElementById("loaded").innerHTML = "Ready!";

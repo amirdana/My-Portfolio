@@ -124,6 +124,23 @@ body {
           align-items: center;
 }
 
+.ld-btn {
+  width: 180px;
+  height: 60px;
+  background: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px white solid;
+}
+
+.ld-btn:hover {
+  background: white;
+  color: #263341;
+}
+
 .c-navbar {
   position: fixed;
   z-index: 1;
