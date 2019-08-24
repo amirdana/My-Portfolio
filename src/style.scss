@@ -87,7 +87,6 @@ $theme-preload: rgb(35, 225, 250);
 
 .compatible {
   i {
-    margin-top: 15px;
     &:hover {
       color: $theme-preload;
     }
@@ -1147,8 +1146,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 @media only screen and (max-width: 350px) {
-  body {
-    overflow-x: hidden;
+  body{
     width: 350px;
   }
 }

@@ -99,10 +99,6 @@ body {
   top: 5vh;
 }
 
-.compatible i {
-  margin-top: 15px;
-}
-
 .compatible i:hover {
   color: #23e1fa;
 }
@@ -1271,7 +1267,6 @@ body {
 
 @media only screen and (max-width: 350px) {
   body {
-    overflow-x: hidden;
     width: 350px;
   }
 }
