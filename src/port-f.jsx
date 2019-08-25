@@ -5,6 +5,30 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
+        <div className="pop-win">
+          <div onClick={this.navpopback} className="close-pop"></div>
+          <div className="">
+            <form
+              className="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+            >
+              <h1>Contact Form</h1>
+              <input placeholder="Name" type="text" />
+              <input placeholder="Email" type="email" />
+              <input placeholder="number" type="number" />
+              <textarea
+                placeholder="message"
+                name="msg"
+                id="form-msg"
+                cols="30"
+                rows="2"
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
         <div id="preload-dlt">
           <button id="preload-btn" onClick={this.esc} className="Pbtn">
             Take a Look
@@ -64,18 +88,18 @@ class Portfolio extends React.Component {
               <div className="c-brand">Amir Dana</div>
 
               <ul className="c-nav-ul">
+                <li>Home</li>
                 <li>
-                  <a href="#">Home</a>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/amirdana"
+                  >
+                    Github
+                  </a>
                 </li>
-                <li>
-                  <a href="#">Github</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">Resume</a>
-                </li>
+                <li onClick={this.popwin}>Contact</li>
+                <li>Resume</li>
               </ul>
             </div>
           </div>
@@ -249,6 +273,13 @@ class Portfolio extends React.Component {
     );
   }
 
+  popwin = () => {
+    document.querySelector(".pop-win").style.top = "15%";
+  };
+
+  navpopback = () => {
+    document.querySelector(".pop-win").style.top = "-200%";
+  };
   scrollyy = divnum => {
     if (divnum === 1) {
       window.scrollTo(0, 0);
