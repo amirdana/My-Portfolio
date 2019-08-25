@@ -58,7 +58,7 @@ body {
 }
 
 #preload-dlt {
-  z-index: 10;
+  z-index: 50;
   background: #263341;
   width: 100%;
   height: 100vh;
@@ -91,18 +91,30 @@ body {
   letter-spacing: 0.02em;
 }
 
-.pop-win {
-  width: 50%;
-  height: 500px;
-  background: #263341;
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
   position: fixed;
-  top: -200%;
-  left: 25%;
-  z-index: 11;
+  top: -500px;
+  z-index: 10;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+.pop-win {
+  width: 50%;
+  min-height: 500px;
+  background: #263341;
+  z-index: 12;
 }
 
 .pop-win .close-pop {
@@ -137,6 +149,7 @@ body {
   color: white;
   text-align: center;
   margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contact-form button {
@@ -209,7 +222,7 @@ body {
 
 .c-navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 13;
   top: 0;
   left: 0;
   width: 100%;
@@ -312,6 +325,15 @@ body {
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position-y: -100px;
 }
 
@@ -1293,6 +1315,9 @@ body {
   .head-image {
     display: none;
   }
+  .pop-win {
+    width: 80%;
+  }
   .contact-form input,
   .contact-form textarea,
   .contact-form button {
@@ -1328,6 +1353,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1336,6 +1364,9 @@ body {
   .rez-2,
   .rez-3 {
     width: 90%;
+  }
+  .main-row {
+    margin-top: -50px;
   }
 }
 
@@ -1348,6 +1379,9 @@ body {
 @media only screen and (min-width: 1500px) {
   .c-container {
     width: 1500px;
+  }
+  .pop-win {
+    width: 650px;
   }
   .c-navbar {
     display: -webkit-box;

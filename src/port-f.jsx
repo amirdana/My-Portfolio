@@ -5,28 +5,30 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <div className="pop-win">
-          <div onClick={this.navpopback} className="close-pop"></div>
-          <div className="">
-            <form
-              className="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-            >
-              <h1>Contact Form</h1>
-              <input placeholder="Name" type="text" />
-              <input placeholder="Email" type="email" />
-              <input placeholder="number" type="number" />
-              <textarea
-                placeholder="message"
-                name="msg"
-                id="form-msg"
-                cols="30"
-                rows="2"
-              ></textarea>
-              <button type="submit">Send</button>
-            </form>
+        <div className="contact-container ">
+          <div className="pop-win">
+            <div onClick={this.navpopback} className="close-pop"></div>
+            <div className="">
+              <form
+                className="contact-form"
+                name="contact"
+                method="POST"
+                netlify
+              >
+                <h1>Contact Form</h1>
+                <input placeholder="Name" type="text" />
+                <input placeholder="Email" type="email" />
+                <input placeholder="number" type="number" />
+                <textarea
+                  placeholder="message"
+                  name="msg"
+                  id="form-msg"
+                  cols="30"
+                  rows="2"
+                ></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
         <div id="preload-dlt">
@@ -104,10 +106,7 @@ class Portfolio extends React.Component {
             </div>
           </div>
 
-          <div
-            className="header-left  d-flex justify-content-center align-items-center"
-            id="head-bg"
-          >
+          <div className="header-left  " id="head-bg">
             <div className="row main-row  mx-2">
               <div className="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div id="headtxt" className="fit-txt ">
@@ -274,11 +273,11 @@ class Portfolio extends React.Component {
   }
 
   popwin = () => {
-    document.querySelector(".pop-win").style.top = "15%";
+    document.querySelector(".contact-container").style.top = "100px";
   };
 
   navpopback = () => {
-    document.querySelector(".pop-win").style.top = "-200%";
+    document.querySelector(".contact-container").style.top = "-500px";
   };
   scrollyy = divnum => {
     if (divnum === 1) {

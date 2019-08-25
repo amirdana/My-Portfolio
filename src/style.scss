@@ -62,7 +62,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 #preload-dlt {
-  z-index: 10;
+  z-index: 50;
   background: $theme-cl;
   width: 100%;
   height: 100vh;
@@ -84,18 +84,23 @@ $theme-preload: rgb(35, 225, 250);
     letter-spacing: 0.02em;
   }
 }
-
-.pop-win {
-  width: 50%;
-  height: 500px;
-  background: #263341;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
   position: fixed;
-  top: -200%;
-  left: 25%;
-  z-index: 11;
-
+  top: -500px;
+  z-index: 10;
   transition-property: all;
   transition-duration: 0.5s;
+}
+.pop-win {
+  width: 50%;
+  min-height: 500px;
+  background: #263341;
+  z-index: 12;
+
   .close-pop {
     width: 50px;
     height: 50px;
@@ -127,6 +132,7 @@ $theme-preload: rgb(35, 225, 250);
     color: white;
     text-align: center;
     margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
   }
   button {
     display: block;
@@ -191,7 +197,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 .c-navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 13;
   top: 0;
   left: 0;
   width: 100%;
@@ -270,7 +276,9 @@ $theme-preload: rgb(35, 225, 250);
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
   background-size: cover;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position-y: -100px;
   .main-row {
     margin-top: -50px;
@@ -1173,6 +1181,9 @@ $theme-preload: rgb(35, 225, 250);
   .head-image {
     display: none;
   }
+  .pop-win {
+    width: 80%;
+  }
   .contact-form {
     input,
     textarea,
@@ -1206,6 +1217,7 @@ $theme-preload: rgb(35, 225, 250);
   .c-container {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1214,6 +1226,9 @@ $theme-preload: rgb(35, 225, 250);
   .rez-2,
   .rez-3 {
     width: 90%;
+  }
+  .main-row {
+    margin-top: -50px;
   }
 }
 
@@ -1226,6 +1241,9 @@ $theme-preload: rgb(35, 225, 250);
 @media only screen and (min-width: 1500px) {
   .c-container {
     width: 1500px;
+  }
+  .pop-win {
+    width: 650px;
   }
   .c-navbar {
     display: flex;
