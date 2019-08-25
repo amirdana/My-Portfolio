@@ -9,24 +9,20 @@ class Portfolio extends React.Component {
           <div className="pop-win">
             <div onClick={this.navpopback} className="close-pop"></div>
             <div className="">
-              <form
-                className="contact-form"
-                name="contact"
-                method="POST"
-                netlify
-              >
-                <h1>Contact Form</h1>
-                <input placeholder="Name" type="text" />
-                <input placeholder="Email" type="email" />
-                <input placeholder="number" type="number" />
-                <textarea
-                  placeholder="message"
-                  name="msg"
-                  id="form-msg"
-                  cols="30"
-                  rows="2"
-                ></textarea>
-                <button type="submit">Send</button>
+              <form name="contact" netlify>
+                <p>
+                  <label>
+                    Name <input type="text" name="name" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Email <input type="email" name="email" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
               </form>
             </div>
           </div>
