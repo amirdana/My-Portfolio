@@ -12,13 +12,13 @@ class Portfolio extends React.Component {
               <form
                 className="contact-form"
                 name="contact"
-                
+                method="post"
                 data-netlify="true"
               >
                 <h1>Contact Form</h1>
-                <input placeholder="Name" type="text" />
-                <input placeholder="Email" type="email" />
-                <input placeholder="number" type="number" />
+                <input name="name" placeholder="Name" type="text" />
+                <input name="email" placeholder="Email" type="email" />
+                <input name="number" placeholder="number" type="number" />
                 <textarea
                   placeholder="message"
                   name="msg"
