@@ -12,8 +12,8 @@ class Portfolio extends React.Component {
               <form
                 className="contact-form"
                 name="contact"
-                method="get"
-                netlify
+                
+                data-netlify="true"
               >
                 <h1>Contact Form</h1>
                 <input placeholder="Name" type="text" />
