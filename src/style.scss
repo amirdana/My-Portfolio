@@ -234,6 +234,47 @@ $theme-preload: rgb(35, 225, 250);
     }
   }
 }
+.github {
+  width: 30px;
+  height: 30px;
+  background: url("imgs/gith.png");
+  background-size: contain;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.android {
+  background: url("imgs/android.png") no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+
+  margin: auto;
+}
+.web {
+  background: url("imgs/web.jpg") no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+
+  margin: auto;
+}
+.windows {
+  background: url("imgs/windows.png") no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+
+  margin: auto;
+}
+.chrome {
+  background: url("imgs/chrome.png") no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+}
 
 .navigation {
   position: fixed;
@@ -271,7 +312,7 @@ $theme-preload: rgb(35, 225, 250);
 }
 
 .header-left {
-  width: 105%;
+  width: 100%;
   min-height: 800px;
   z-index: -1;
   background: url("imgs/head-img.svg") no-repeat;
@@ -308,7 +349,12 @@ $theme-preload: rgb(35, 225, 250);
   background: #f2f2f2;
   z-index: -2;
 }
-
+.gitinf {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 5px;
+}
 .head-image {
   background: url("imgs/headimg-min.png") no-repeat;
   background-size: contain;
@@ -338,7 +384,6 @@ $theme-preload: rgb(35, 225, 250);
   -webkit-box-shadow: -4px 9px 37px -1px rgba(59, 58, 58, 0.4);
   -moz-box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
   box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
-
   &:hover {
     background-image: url("imgs/Frame1.svg");
     position: relative;
@@ -367,6 +412,7 @@ $theme-preload: rgb(35, 225, 250);
   box-shadow: -4px 9px 37px -1px rgba(68, 68, 68, 0.4);
   position: relative;
   transform: translatey(-50px);
+  z-index: 2;
 
   &:hover {
     background-image: url("imgs/Frame3.svg");
@@ -440,7 +486,7 @@ $theme-preload: rgb(35, 225, 250);
   width: 100px;
 }
 .ct5 {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -449,13 +495,14 @@ $theme-preload: rgb(35, 225, 250);
   background: url("imgs/sec2bg.svg") no-repeat;
   background-size: cover;
   background-position: right;
-
+  width: 100%;
   min-height: 1200px;
 
   padding-bottom: 200px;
 }
 
 .sec2-pj {
+  width: 100%;
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -465,7 +512,7 @@ $theme-preload: rgb(35, 225, 250);
   background-size: cover;
   background-position: center;
   border-radius: 15px;
-  width: 320px;
+  width: 300px;
   min-height: 350px;
   text-align: center;
   color: rgba(0, 0, 0, 0.63);
@@ -530,7 +577,7 @@ $theme-preload: rgb(35, 225, 250);
   height: 100px;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
-  background: rgb(53, 53, 53);
+  background: rgb(78, 78, 78);
   background-size: cover;
   color: white;
   font-family: sans-serif;
@@ -1140,6 +1187,12 @@ $theme-preload: rgb(35, 225, 250);
 
 //media querys
 
+@media only screen and (max-width: 1250px) {
+  .gitinf {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .fit-txt {
     text-align: center;
@@ -1167,6 +1220,9 @@ $theme-preload: rgb(35, 225, 250);
   .header-left {
     padding-top: 250px;
   }
+  .ct5 {
+    width: 80%;
+  }
   .rez-2 {
     transform: translatey(0);
     &:hover {
@@ -1181,6 +1237,9 @@ $theme-preload: rgb(35, 225, 250);
 @media only screen and (max-width: 576px) {
   .head-image {
     display: none;
+  }
+  .ct5 {
+    width: 90%;
   }
   .pop-win {
     width: 80%;

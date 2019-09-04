@@ -12,7 +12,7 @@ class Portfolio extends React.Component {
               <form
                 className="contact-form"
                 name="contactme"
-                method="post"
+                method="get"
                 data-netlify="true"
               >
                 <h1>Contact Form</h1>
@@ -52,8 +52,9 @@ class Portfolio extends React.Component {
             Develope and Desinged By Amirhossein Lavasani &copy; 2019{" "}
           </p>
           <div className="compatible d-flex flex-column">
-            <i className="text-center fa fa-chrome fa-2x" />
-            <span>Chrome Optimized</span>
+            <span>
+              <strong>V8 </strong>Engine Optimized
+            </span>
           </div>
         </div>
         <header>
@@ -134,7 +135,10 @@ class Portfolio extends React.Component {
                     <strong id="head-ps"> </strong>
                   </p>
                   <a className="text-light " href="https://github.com/amirdana">
-                    <i className="fa fa-github git-info mb-3 "> github</i>
+                    <div className="gitinf ">
+                      <div className="github"></div>
+                      <div>github</div>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -150,42 +154,44 @@ class Portfolio extends React.Component {
 
         <section>
           <div className="sec1-bg  ">
-            <div className="row secrow">
-              <div className=" col-md-4 col-sm-6   p-0  d-flex justify-content-center align-items-center">
-                <div id="r1" className="rez-1  text-center ">
-                  <i className="fa fa-android andr" />
-                  <div className="ct2 ">
-                    <p className="pt-5">Familar with</p>
-                    <p>B4 Android</p>
-                    <p className="rellax">Hybrid OOP</p>
-                    <p className="">Hardware engaged programing</p>
-                    <p className="">Couple of published app</p>
+            <div className="ct5">
+              <div className="row secrow">
+                <div className=" col-md-4 col-sm-6   p-0  d-flex justify-content-center align-items-center">
+                  <div id="r1" className="rez-1  text-center ">
+                    <div className="android"></div>
+                    <div className="ct2 ">
+                      <p className="pt-5">Familar with</p>
+                      <p>B4 Android</p>
+                      <p className="rellax">Hybrid OOP</p>
+                      <p className="">Hardware engaged programing</p>
+                      <p className="">Couple of published app</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-4 col-sm-6 p-0 pl-1 d-flex justify-content-center align-items-center">
-                <div id="r1" className="rez-2 m-2 text-center ">
-                  <i className="fa fa-globe web" />
-                  <div className="ct2 ">
-                    <p className="pt-5">HTML5 CSS3 JS-Es6+ </p>
-                    <p className="">React js JSX</p>
-                    <p className="">Sass Bootstrap 4.3</p>
-                    <p className="">git Npm command line</p>
-                    <p className="">Web API's</p>
-                    <p className="">UI UX</p>
-                    <p className="">SEO</p>
+                <div className="col-md-4 col-sm-6 p-0 pl-1 d-flex justify-content-center align-items-center">
+                  <div id="r1" className="rez-2 m-2 text-center ">
+                    <div className="web"></div>
+                    <div className="ct2 ">
+                      <p className="pt-5">HTML5 CSS3 JS-Es6+ </p>
+                      <p className="">React js JSX</p>
+                      <p className="">Sass Bootstrap 4.3</p>
+                      <p className="">git Npm command line</p>
+                      <p className="">Web API's</p>
+                      <p className="">UI UX</p>
+                      <p className="">SEO</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className=" col-md-4 col-sm-6 p-0 d-flex justify-content-center align-items-center">
-                <div id="r3" className="rez-3 m-2 text-center">
-                  <i className="fa fa-windows win" />
-                  <div className="ct2 ">
-                    <p className="pt-5">Familar with </p>
-                    <p className="">C C++ C# </p>
-                    <p className="">phyton</p>
-                    <p className="">Visual studio</p>
-                    <p className="">OOP</p>
+                <div className=" col-md-4 col-sm-6 p-0 d-flex justify-content-center align-items-center">
+                  <div id="r3" className="rez-3 m-2 text-center">
+                    <div className="windows"></div>
+                    <div className="ct2 ">
+                      <p className="pt-5">Familar with </p>
+                      <p className="">C C++ C# </p>
+                      <p className="">phyton</p>
+                      <p className="">Visual studio</p>
+                      <p className="">OOP</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -246,9 +252,9 @@ class Portfolio extends React.Component {
                     <div className="screen-shot4" />
 
                     <h4 className="mt-3">Form Validation</h4>
+                    <p className="mt-1">Regex Reference</p>
                     <p className="mt-1">Javascript</p>
                     <p className="mt-1">Sass</p>
-                    <p className="mt-1">Regex Reference</p>
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
@@ -269,7 +275,9 @@ class Portfolio extends React.Component {
                 className="text-light text-center "
                 href="https://github.com/amirdana"
               >
-                <i className="fa fa-github fa-2x " />
+                <div className="d-flex justify-content-center">
+                  <div className="github"></div>
+                </div>
               </a>
               <p className="mt-1 mb-0 pwerd">Powered By React JS</p>
               <p className="mt-2 mb-0">
@@ -297,7 +305,7 @@ class Portfolio extends React.Component {
       window.scrollTo(0, 800);
     }
     if (divnum === 3) {
-      window.scrollTo(0, 1600);
+      window.scrollTo(0, 1550);
     }
     if (divnum === 4) {
       window.scrollTo(0, 1800);
@@ -307,22 +315,22 @@ class Portfolio extends React.Component {
   scroller = window.addEventListener("scroll", () => {
     let ypos = window.scrollY;
     if (ypos <= 400) {
-      document.querySelector(".s1").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s1").style.backgroundColor = "#00DCFF";
       document.querySelector(".s2").style.backgroundColor = "#263341af";
       document.querySelector(".s3").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
     } else if (ypos <= 800 && ypos >= 400) {
-      document.querySelector(".s2").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s2").style.backgroundColor = "#00DCFF";
       document.querySelector(".s1").style.backgroundColor = "#263341af";
       document.querySelector(".s3").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
     } else if (ypos <= 1600 && ypos >= 800) {
-      document.querySelector(".s3").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s3").style.backgroundColor = "#00DCFF";
       document.querySelector(".s2").style.backgroundColor = "#263341af";
       document.querySelector(".s1").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
     } else if (ypos <= 2400 && ypos >= 1600) {
-      document.querySelector(".s3").style.backgroundColor = "#17a2b8";
+      document.querySelector(".s3").style.backgroundColor = "#00DCFF";
       document.querySelector(".s2").style.backgroundColor = "#263341af";
       document.querySelector(".s1").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
