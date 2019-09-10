@@ -587,6 +587,12 @@ $theme-preload: rgb(35, 225, 250);
     text-align: center;
   }
 }
+a {
+  text-decoration: none;
+}
+.opaciti-go {
+  opacity: 0;
+}
 
 //keyframes & classes
 

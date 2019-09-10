@@ -214,7 +214,11 @@ class Portfolio extends React.Component {
                 <div className="col-md-4 col-sm-6  sec2-pj">
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot1" />
-                    <h4 className="mt-3">Weather Status</h4>
+                    <h4 className="mt-3">
+                      <a href="https://github.com/amirdana/weather-api">
+                        Weather Status
+                      </a>{" "}
+                    </h4>
                     <p className="mt-1">Darksky API</p>
                     <p className="mt-1">Vanilla Js</p>
                     <p className="mt-1">Sass</p>
@@ -233,7 +237,11 @@ class Portfolio extends React.Component {
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot3" />
 
-                    <h4 className="mt-3">Digikala Front</h4>
+                    <h4 className="mt-3">
+                      <a href="https://github.com/amirdana/Digikala-front-end">
+                        Digikala Front
+                      </a>
+                    </h4>
                     <p className="mt-1">Bootstrap</p>
                     <p className="mt-1">Sass</p>
                     <p className="mt-1 text-dark">
@@ -247,20 +255,24 @@ class Portfolio extends React.Component {
             </div>
             <div className="ct5 ">
               <div className="row d-flex justify-content-center">
+                <div className="col-md-4 col-sm-6 sec2-pj opaciti-go">
+                  <div className=" sec2-pjb flex-fill" />
+                </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot4" />
 
-                    <h4 className="mt-3">Form Validation</h4>
+                    <h4 className="mt-3">
+                      <a href="https://github.com/amirdana/Form-validation">
+                        Form Validation
+                      </a>
+                    </h4>
                     <p className="mt-1">Regex Reference</p>
                     <p className="mt-1">Javascript</p>
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
-                  <div className=" sec2-pjb flex-fill" />
-                </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div className="col-md-4 col-sm-6 sec2-pj opaciti-go">
                   <div className=" sec2-pjb flex-fill" />
                 </div>
               </div>
