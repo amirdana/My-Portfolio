@@ -90,7 +90,7 @@ class Portfolio extends React.Component {
               onClick={() => {
                 this.scrollyy(4);
               }}
-              className="s4"
+              className="s4 d-none" ///////////////////
             >
               Resume
             </div>
@@ -101,7 +101,13 @@ class Portfolio extends React.Component {
               <div className="c-brand">Amir Dana</div>
 
               <ul className="c-nav-ul">
-                <li>Home</li>
+                <li
+                  onClick={() => {
+                    this.scrollyy(1);
+                  }}
+                >
+                  Home
+                </li>
                 <li>
                   <a
                     rel="noopener noreferrer"
@@ -209,7 +215,7 @@ class Portfolio extends React.Component {
               perojects
             </div>
             <span className="span-line" />
-            <div className="ct5 ">
+            <div className="ct5">
               <div className="row  d-flex justify-content-center">
                 <div className="col-md-4 col-sm-6  sec2-pj">
                   <div className=" sec2-pjb  flex-fill text-center">
@@ -224,12 +230,27 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div className="col-md-4 col-sm-6 sec2-pj d-none">
+                  ////////////////
                   <div className=" sec2-pjb  flex-fill text-center">
                     <div className="screen-shot2" />
                     <h4 className="mt-3">Instagram UI</h4>
                     <p className="mt-1">HTML5 CSS3</p>
                     <p className="mt-1">Bootstrap</p>
+                    <p className="mt-1">Sass</p>
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-6 sec2-pj">
+                  <div className=" sec2-pjb  flex-fill text-center">
+                    <div className="screen-shot4" />
+
+                    <h4 className="mt-3">
+                      <a href="https://github.com/amirdana/Form-validation">
+                        Form Validation
+                      </a>
+                    </h4>
+                    <p className="mt-1">Regex Reference</p>
+                    <p className="mt-1">Javascript</p>
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
@@ -255,24 +276,13 @@ class Portfolio extends React.Component {
             </div>
             <div className="ct5 ">
               <div className="row d-flex justify-content-center">
-                <div className="col-md-4 col-sm-6 sec2-pj opaciti-go">
+                <div className="col-md-4 col-sm-6 sec2-pj d-none">
+                  ///////////
                   <div className=" sec2-pjb flex-fill" />
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
-                  <div className=" sec2-pjb  flex-fill text-center">
-                    <div className="screen-shot4" />
 
-                    <h4 className="mt-3">
-                      <a href="https://github.com/amirdana/Form-validation">
-                        Form Validation
-                      </a>
-                    </h4>
-                    <p className="mt-1">Regex Reference</p>
-                    <p className="mt-1">Javascript</p>
-                    <p className="mt-1">Sass</p>
-                  </div>
-                </div>
-                <div className="col-md-4 col-sm-6 sec2-pj opaciti-go">
+                <div className="col-md-4 col-sm-6 sec2-pj d-none">
+                  ////////////
                   <div className=" sec2-pjb flex-fill" />
                 </div>
               </div>
