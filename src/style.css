@@ -603,7 +603,7 @@ body {
   background-size: cover;
   background-position: right;
   width: 100%;
-  min-height: 1200px;
+  min-height: 800px;
   padding-bottom: 200px;
 }
 
@@ -708,10 +708,6 @@ body {
 .foot-er .pwerd {
   font-size: 10px;
   text-align: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 .opaciti-go {

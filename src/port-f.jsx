@@ -118,7 +118,15 @@ class Portfolio extends React.Component {
                   </a>
                 </li>
                 <li onClick={this.popwin}>Contact</li>
-                <li>Resume</li>
+                <li>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://jobinja.ir/user/RQ-2433343"
+                  >
+                    Resume
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

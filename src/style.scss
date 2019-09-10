@@ -496,7 +496,7 @@ $theme-preload: rgb(35, 225, 250);
   background-size: cover;
   background-position: right;
   width: 100%;
-  min-height: 1200px;
+  min-height: 800px;
 
   padding-bottom: 200px;
 }
@@ -587,9 +587,7 @@ $theme-preload: rgb(35, 225, 250);
     text-align: center;
   }
 }
-a {
-  text-decoration: none;
-}
+
 .opaciti-go {
   opacity: 0;
 }
