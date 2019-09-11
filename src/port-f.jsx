@@ -349,12 +349,12 @@ class Portfolio extends React.Component {
       document.querySelector(".s2").style.backgroundColor = "#263341af";
       document.querySelector(".s3").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
-    } else if (ypos <= 800 && ypos >= 400) {
+    } else if (ypos <= 1200 && ypos >= 400) {
       document.querySelector(".s2").style.backgroundColor = "#00DCFF";
       document.querySelector(".s1").style.backgroundColor = "#263341af";
       document.querySelector(".s3").style.backgroundColor = "#263341af";
       document.querySelector(".s4").style.backgroundColor = "#263341af";
-    } else if (ypos <= 1600 && ypos >= 800) {
+    } else if (ypos <= 1600 && ypos >= 1200) {
       document.querySelector(".s3").style.backgroundColor = "#00DCFF";
       document.querySelector(".s2").style.backgroundColor = "#263341af";
       document.querySelector(".s1").style.backgroundColor = "#263341af";
