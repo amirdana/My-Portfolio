@@ -324,9 +324,9 @@ class Portfolio extends React.Component {
 
   showproj = projnum => {
     if (projnum === 1) {
-      window.open("http://http://rentic.ir/weatherSt/p-1.html");
+      window.open("http://rentic.ir/weatherSt/p-1.html");
     } else if (projnum === 3) {
-      window.open("http://rentic.ir/formval/p3H.html");
+      window.open("http ://rentic.ir/formval/p3H.html");
     } else if (projnum === 2) {
       window.open("http://rentic.ir/Mdesigne");
     } else if (projnum === 4) {
