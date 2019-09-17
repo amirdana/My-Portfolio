@@ -6,7 +6,6 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   cursor: default;
-
 }
 
 body {
@@ -562,6 +561,17 @@ $theme-preload: rgb(35, 225, 250);
 }
 .screen-shot4 {
   background: url("imgs/form-validation.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 150px;
+  width: 100%;
+  transition-duration: 0.3s;
+  object-fit: contain;
+}
+.screen-shot5 {
+  background: url("imgs/Mdesigne.png") no-repeat;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px;

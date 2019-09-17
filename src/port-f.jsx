@@ -237,18 +237,21 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj d-none">
-                  <div className=" sec2-pjb  flex-fill text-center">
-                    <div className="screen-shot2" />
-                    <h4 className="mt-3">Instagram UI</h4>
-                    <p className="mt-1">HTML5 CSS3</p>
+                <div className="col-md-4 col-sm-6 sec2-pj ">
+                  <div
+                    onClick={() => this.showproj(2)}
+                    className=" sec2-pjb  flex-fill text-center"
+                  >
+                    <div className="screen-shot5" />
+                    <h4 className="mt-3">Modern Desinge</h4>
+                    <p className="mt-1">Js</p>
                     <p className="mt-1">Bootstrap</p>
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-6 sec2-pj">
                   <div
-                    onClick={() => this.showproj(2)}
+                    onClick={() => this.showproj(3)}
                     className=" sec2-pjb  flex-fill text-center"
                   >
                     <div className="screen-shot4" />
@@ -259,27 +262,37 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
-                  <div
-                    onClick={() => this.showproj(3)}
-                    className=" sec2-pjb  flex-fill text-center"
-                  >
-                    <div className="screen-shot3" />
-
-                    <h4 className="mt-3">Digikala Front</h4>
-                    <p className="mt-1">Bootstrap</p>
-                    <p className="mt-1">Sass</p>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="ct5 ">
               <div className="row d-flex justify-content-center">
-                <div className="col-md-4 col-sm-6 sec2-pj d-none">
-                  <div className=" sec2-pjb flex-fill" />
+                <div className="col-md-4 col-sm-6 sec2-pj">
+                  <div
+                    onClick={() => this.showproj(4)}
+                    className=" sec2-pjb  flex-fill text-center"
+                  >
+                    <div className="screen-shot3" />
+
+                    <h4 className="mt-3">Digikala H-P Front</h4>
+                    <p className="mt-1">Bootstrap</p>
+                    <p className="mt-1">Sass</p>
+                    <p className="mt-1">Js</p>
+                  </div>
                 </div>
 
-                <div className="col-md-4 col-sm-6 sec2-pj d-none">
+                <div className="col-md-4 col-sm-6 sec2-pj">
+                  <div
+                    onClick={() => this.showproj(5)}
+                    className=" sec2-pjb  flex-fill text-center"
+                  >
+                    <div className="screen-shot2" />
+                    <h4 className="mt-3">Instagram H-P UI</h4>
+
+                    <p className="mt-1">Bootstrap</p>
+                    <p className="mt-1">Sass</p>
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-6 sec2-pj ">
                   <div className=" sec2-pjb flex-fill" />
                 </div>
               </div>
@@ -311,17 +324,17 @@ class Portfolio extends React.Component {
 
   showproj = projnum => {
     if (projnum === 1) {
-      window.open("https://github.com/amirdana/weather-api");
-    } else if (projnum === 2) {
-      window.open("https://github.com/amirdana/Form-validation");
+      window.open("http://http://rentic.ir/weatherSt/p-1.html");
     } else if (projnum === 3) {
-      window.open("https://github.com/amirdana/Digikala-front-end");
+      window.open("http://rentic.ir/formval/p3H.html");
+    } else if (projnum === 2) {
+      window.open("http://rentic.ir/Mdesigne");
     } else if (projnum === 4) {
-      window.open("https://github.com/amirdana/instagram-ui");
+      window.open("http://rentic.ir/digikalaFr/p3.html");
     } else if (projnum === 5) {
-      window.open("https://github.com/amirdana/Form-validation");
+      window.open("http://rentic.ir/instagramUI/p2.html");
     } else {
-      window.open("https://github.com/amirdana/Form-validation");
+      //window.open("https://github.com/amirdana/Form-validation");
     }
   };
 
