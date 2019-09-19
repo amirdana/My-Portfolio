@@ -220,7 +220,7 @@ class Portfolio extends React.Component {
               className="glitch text-dark text-center text-dark txt-shadow"
               data-text="Projects"
             >
-              perojects
+              Projects
             </div>
             <span className="span-line" />
             <div className="ct5">
