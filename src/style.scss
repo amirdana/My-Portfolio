@@ -46,6 +46,19 @@ $theme-preload: rgb(35, 225, 250);
 
 .Pbtn {
   display: none;
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  transition-duration: 0.3s;
+  border: 1px white solid;
+
+  &:hover {
+    background: white;
+    color: #263341;
+  }
 }
 
 .span-line {
@@ -189,7 +202,7 @@ $theme-preload: rgb(35, 225, 250);
   font-size: 20px;
   transition-duration: 0.3s;
   border: 1px white solid;
-
+  display: block;
   &:hover {
     background: white;
     color: #263341;

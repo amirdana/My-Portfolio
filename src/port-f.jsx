@@ -421,6 +421,7 @@ class Portfolio extends React.Component {
   };
 
   preloadKill = window.addEventListener("load", () => {
+    document.getElementById("preload-btn").classList.remove("Pbtn");
     document.getElementById("preload-btn").classList.add("ld-btn");
     document.getElementById("preload-btn").style.display = "block";
     document.getElementById("loaded").classList.remove("tracking-in-expand");

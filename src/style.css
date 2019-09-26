@@ -42,6 +42,20 @@ body {
 
 .Pbtn {
   display: none;
+  width: 160px;
+  height: 50px;
+  background: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px white solid;
+}
+
+.Pbtn:hover {
+  background: white;
+  color: #263341;
 }
 
 .span-line {
@@ -213,6 +227,7 @@ body {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   border: 1px white solid;
+  display: block;
 }
 
 .ld-btn:hover {
