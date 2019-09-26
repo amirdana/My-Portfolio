@@ -420,24 +420,14 @@ class Portfolio extends React.Component {
     }
   };
 
-  forceLoad = setTimeout(() => {
-    document.getElementById("preload-btn").disabled = false;
-    let apy = document.getElementById("preload-btn").classList;
-    apy.add("ld-btn");
-
-    document.getElementById("loaded").classList.remove("tracking-in-expand");
-    document.getElementById("loaded").classList.add("preload-txt");
-    document.getElementById("loaded").innerHTML = "Ready!";
-  }, 15000);
-
   preloadKill = window.addEventListener("load", () => {
-    let apy = document.getElementById("preload-btn").classList;
-    apy.add("ld-btn");
+    document.getElementById("preload-btn").classList.add("ld-btn");
     document.getElementById("preload-btn").style.display = "block";
-
     document.getElementById("loaded").classList.remove("tracking-in-expand");
     document.getElementById("loaded").classList.add("preload-txt");
-    document.getElementById("loaded").innerHTML = "Ready!";
+    if (document.getElementById("preload-btn").style.display == "block") {
+      document.getElementById("loaded").innerHTML = "Ready!";
+    }
   });
 }
 
