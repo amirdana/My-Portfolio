@@ -1,7 +1,14 @@
 import React from "react";
 import "./style.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 class Portfolio extends React.Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+  }
   render() {
     return (
       <div>
@@ -167,7 +174,7 @@ class Portfolio extends React.Component {
         </header>
 
         <section>
-          <div className="sec1-bg  ">
+          <div className="sec1-bg ">
             <div className="ct5">
               <div className="row secrow">
                 <div className=" col-md-4 col-sm-6   p-0  d-flex justify-content-center align-items-center">
@@ -225,7 +232,7 @@ class Portfolio extends React.Component {
             <span className="span-line" />
             <div className="ct5">
               <div className="row  d-flex justify-content-center">
-                <div className="col-md-4 col-sm-6  sec2-pj">
+                <div data-aos="fade-up" className="col-md-4 col-sm-6  sec2-pj">
                   <div
                     onClick={() => this.showproj(1)}
                     className=" sec2-pjb  flex-fill text-center"
@@ -237,7 +244,11 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj ">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  className="col-md-4 col-sm-6 sec2-pj "
+                >
                   <div
                     onClick={() => this.showproj(2)}
                     className=" sec2-pjb  flex-fill text-center"
@@ -249,7 +260,11 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  className="col-md-4 col-sm-6 sec2-pj"
+                >
                   <div
                     onClick={() => this.showproj(3)}
                     className=" sec2-pjb  flex-fill text-center"
@@ -266,7 +281,7 @@ class Portfolio extends React.Component {
             </div>
             <div className="ct5 ">
               <div className="row d-flex justify-content-center">
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div data-aos="fade-up" className="col-md-4 col-sm-6 sec2-pj">
                   <div
                     onClick={() => this.showproj(4)}
                     className=" sec2-pjb  flex-fill text-center"
@@ -280,7 +295,11 @@ class Portfolio extends React.Component {
                   </div>
                 </div>
 
-                <div className="col-md-4 col-sm-6 sec2-pj">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  className="col-md-4 col-sm-6 sec2-pj"
+                >
                   <div
                     onClick={() => this.showproj(5)}
                     className=" sec2-pjb  flex-fill text-center"
@@ -292,7 +311,11 @@ class Portfolio extends React.Component {
                     <p className="mt-1">Sass</p>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6 sec2-pj ">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  className="col-md-4 col-sm-6 sec2-pj "
+                >
                   <div className=" sec2-pjb flex-fill" />
                 </div>
               </div>

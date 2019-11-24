@@ -457,6 +457,7 @@ body {
 
 .sec1-bg {
   min-height: 700px;
+  width: 100%;
   background: url("imgs/Group.svg") no-repeat;
   background-size: cover;
   display: -webkit-box;
